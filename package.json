@@ -1,0 +1,30 @@
+{
+  "name": "@henderea/build-assets",
+  "version": "0.0.1",
+  "description": "Builds asset mjs files for bundling",
+  "main": "index.js",
+  "repository": "git@github.com:henderea/build-assets.git",
+  "author": "Eric Henderson <henderea@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext .js,.mjs,.ts",
+    "lint:fix": "eslint --ext .js,.mjs,.ts"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint": "^8.54.0",
+    "eslint-config-henderea": "1.1.18",
+    "eslint-plugin-import": "^2.29.0",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "bin/**/*"
+  ],
+  "bin": {
+    "build-assets": "bin/build-assets.js"
+  },
+  "eslintConfig": {
+    "extends": "henderea"
+  }
+}
