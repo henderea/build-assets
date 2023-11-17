@@ -1,6 +1,6 @@
 {
   "name": "@henderea/build-assets",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Builds asset mjs files for bundling",
   "main": "index.js",
   "repository": "git@github.com:henderea/build-assets.git",
