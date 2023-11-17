@@ -21,8 +21,8 @@ function saveAsset(fileName, varName, value) {
 }
 
 for(const asset of assets) {
-  if(asset.type == 'version' && assets.packageJson) {
-    const packageJsonFile = path.join(rootDir, assetsData.packageJson);
+  if(asset.type == 'version' && asset.packageJson) {
+    const packageJsonFile = path.join(rootDir, asset.packageJson);
     const version = JSON.parse(fs.readFileSync(packageJsonFile, 'utf8')).version;
     const assetName = asset.name || 'version';
 
