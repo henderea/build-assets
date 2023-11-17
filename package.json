@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Builds asset mjs files for bundling",
   "main": "index.js",
-  "repository": "git@github.com:henderea/build-assets.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/henderea/build-assets.git"
+  },
   "author": "Eric Henderson <henderea@gmail.com>",
   "license": "MIT",
   "scripts": {
