@@ -1,6 +1,6 @@
 {
   "name": "@henderea/build-assets",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Builds asset mjs files for bundling",
   "main": "src/build-assets.js",
   "types": "src/build-assets.d.ts",
