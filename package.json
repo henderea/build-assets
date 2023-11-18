@@ -2,7 +2,8 @@
   "name": "@henderea/build-assets",
   "version": "1.0.2",
   "description": "Builds asset mjs files for bundling",
-  "main": "index.js",
+  "main": "src/build-assets.js",
+  "types": "src/build-assets.d.ts",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/henderea/build-assets.git"
@@ -11,7 +12,14 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint --ext .js,.mjs,.ts",
-    "lint:fix": "eslint --ext .js,.mjs,.ts"
+    "lint:fix": "eslint --ext .js,.mjs,.ts",
+    "assets:build": "node scripts/build-self-assets.js",
+    "prepublishOnly": "npm run assets:build"
+  },
+  "dependencies": {
+    "@henderea/arg-helper": "^1.2.6",
+    "@henderea/simple-colors": "^2.1.2",
+    "arg": "^5.0.2"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.11.0",
@@ -22,7 +30,9 @@
     "typescript": "^5.2.2"
   },
   "files": [
-    "bin/**/*"
+    "bin/**/*",
+    "src/**/*",
+    "assets/**/*"
   ],
   "bin": {
     "build-assets": "bin/build-assets.js"
